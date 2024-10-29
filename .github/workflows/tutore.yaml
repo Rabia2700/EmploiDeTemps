@@ -24,6 +24,9 @@ jobs:
     - name: Executer les tests
       run: ./mvnw test  # Exécute les tests unitaires
 
+    - name: Donner les permissions d'exécution à mvnw
+      run: chmod +x ./mvnw  
+
     
     
 
