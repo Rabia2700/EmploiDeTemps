@@ -26,6 +26,12 @@ jobs:
 
     - name: Donner les permissions d'exécution à mvnw
       run: chmod +x ./mvnw  
+   
+    - name: Vérifier les permissions de mvnw
+      run: ls -l ./mvnw
+
+    - name: Convertir mvnw
+      run: dos2unix ./mvnw
 
     
     
